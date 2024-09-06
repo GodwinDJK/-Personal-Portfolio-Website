@@ -27,6 +27,28 @@
     color: #153daa;
 }
 
+.blueB {
+    margin-top: 1em;
+    background-color: #153daa;
+    height: 600px;
+}
+
+img {
+    margin-top: 25px;
+    margin-left: 25px;
+    height: 550px;
+    float: left;
+
+}
+
+p {
+    margin-left: 600px;
+    margin-top: 100px;
+    width: 35%;
+    padding: 50px;
+}
+
+
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
@@ -42,6 +64,8 @@
       float: right;
       display: block;
     }
+
+    /*img {height="350"}*/
 }
   
 /* The "responsive" class is added to the topnav
