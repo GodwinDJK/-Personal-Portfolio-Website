@@ -70,6 +70,7 @@
     display: none;
 }
 
+
 footer p {
     background-color: #ddd;
     text-align: center;
@@ -150,4 +151,39 @@ footer p {
     .container p {
         margin-top: 10px;
     }
+
+}
+
+.container1 {
+    margin-top: 20px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container1 h1 {
+    font-size: 200%;
+}
+
+.container1 form {
+    font-size: x-large;
+}
+
+.container1 input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+h2, .opac {
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.container3 {
+    background-color: rgba(216, 216, 216, 0.5);
+    text-align: center;
+    padding: 30px 70px;
+    margin-top: 20px;
 }
