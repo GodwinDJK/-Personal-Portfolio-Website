@@ -1,35 +1,29 @@
-/* Add a black background color to the top navigation */
+/* Top navigation */
 .topnav {
     background-color: #153daa;
-    overflow: hidden;
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
     align-items: center;
 }
-  
-/* Style the links inside the navigation bar */
+
 .topnav a {
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 1rem;
     text-decoration: none;
-    font-size: 17px;
-    transition: background-color 0.3 ease;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
-  
-/* Add an active class for the current page */
+
 .topnav a:hover, .topnav a.active {
     background-color: #ddd;
     color: #153daa;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
 }
 
-/* Responsive layout for mobile */
 @media screen and (max-width: 768px) {
     .topnav a {
         display: none;
@@ -37,195 +31,183 @@
     .topnav .icon {
         display: block;
         color: white;
-        font-size: 22px;
+        font-size: 1.5rem;
     }
     .topnav.responsive a {
         display: block;
         text-align: center;
-        padding: 10px 0;
+        padding: 1rem 0;
     }
 }
 
-.job {
+/* Job and Education sections */
+.job, .education {
     margin-bottom: 20px;
 }
 
-.job h3 {
+.job h3, .education h3 {
     font-size: 1.5rem;
     margin: 0;
 }
 
-.job span {
+.job span, .education span {
     font-weight: normal;
     font-size: 1rem;
     color: #666;
 }
 
-.job ul {
+.job ul, .education ul {
     list-style-type: disc;
     padding-left: 20px;
     line-height: 1.6;
 }
 
-.job ul li {
+.job ul li, .education ul li {
     margin-bottom: 10px;
 }
 
-
+/* Main content container */
 .container {
     display: flex;
     width: 100%;
-    margin: 1em auto;
-    /*margin-top: 1em;*/
+    margin: 2rem auto;
     background-color: #153daa;
-    height: 600px;
+    flex-wrap: wrap;
 }
 
 .container img {
-    margin: 25px 25px;
-    height: 550px ;
-    /*width: 45%;
-    height: auto;*/
+    margin: 2rem;
+    max-width: 100%;
+    max-height: 550px;
 }
 
 .container p {
-    font-size: x-large;
+    font-size: 1.25rem;
     text-align: center;
-    height: 150px;
-    width: 50%;
-    margin-top: 200px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 25px 50px;
-    overflow: auto;
-    /*
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-    
-    justify-content: center;
-    align-items: center;
-    height: 100px;*/
-    
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
 }
 
-
-
-
-
+/* Footer section */
 footer p {
-    background-color: #ddd;
+    background-color: #f2f2f2;
     text-align: center;
-    font-size: large;
-    height: 6%;
-    padding: 20px;
+    font-size: 1rem;
+    padding: 1rem 0;
 }
 
-/* When the screen is less than 600 pixels wide,
- hide all links, except for the first one ("Home"). 
- Show the link that contains should open and close 
- the topnav (.icon) */
- @media screen and (max-width: 768px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-}
-  
-/* The "responsive" class is added to the topnav
- with JavaScript when the user clicks on the icon. 
- This class makes the topnav look good on small 
- screens (display the links vertically instead of 
- horizontally) */
+/* Responsive layout */
 @media screen and (max-width: 768px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: center;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .container img {
-        margin-top: 50px;
-    }
-}
-
-@media (min-width: 426px) and (max-width: 768px) {
-    .container img {
-        margin-top: 70px;
-    }
-}
-
-@media screen and (max-width:1024px) {
     .container {
         flex-direction: column;
         align-items: center;
     }
 
     .container img {
-        height: 300px;
+        height: auto;
+        max-width: 90%;
     }
 
     .container p {
-        margin-top: 10%;
-        font-size: large;
-        width: auto;
-        padding: 25px 75px;
-        margin-left: 0px;
-        margin-right: 0px;
+        font-size: 1rem;
+        padding: 1.5rem;
+        margin-top: 1rem;
     }
 }
 
-@media (min-width:769px) and (max-width:1024px) {
-    .container img {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    
-    .container p {
-        margin-top: 10px;
-    }
-
-}
-
+/* Contact form styling */
 .container1 {
-    margin-top: 20px;
-    background-color: #ddd;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
 
 .container1 h1 {
-    font-size: 200%;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #153daa;
 }
 
 .container1 form {
-    font-size: x-large;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
-.container1 input{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 40px;
+.container1 label {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
 }
 
-h2, .opac {
-    color: #000; /* Fallback for older browsers */
-    color: rgba(0, 0, 0, 0.5);
+.container1 input[type="text"],
+.container1 input[type="email"],
+.container1 textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
 }
 
-.container3 {
-    background-color: rgba(216, 216, 216, 0.5);
+.container1 input[type="text"]:focus,
+.container1 input[type="email"]:focus,
+.container1 textarea:focus {
+    border-color: #153daa;
+}
+
+.container1 textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.container1 input[type="submit"] {
+    background-color: #153daa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.container1 input[type="submit"]:hover {
+    background-color: #0c2b7a;
+}
+
+.contact-details {
+    margin-top: 40px;
     text-align: center;
-    padding: 30px 70px;
-    margin-top: 20px;
+}
+
+.contact-details h2 {
+    font-size: 1.8rem;
+    color: #153daa;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.contact-details a {
+    color: #153daa;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
 }
